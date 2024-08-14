@@ -1,0 +1,551 @@
+|multiply
+SW[0] => SW[0].IN3
+SW[1] => SW[1].IN3
+SW[2] => SW[2].IN3
+SW[3] => SW[3].IN3
+SW[4] => SW[4].IN3
+SW[5] => SW[5].IN3
+SW[6] => SW[6].IN3
+SW[7] => SW[7].IN3
+Clk => Clk.IN4
+Reset_Load_Clear => Reset_h.IN2
+Reset_Load_Clear => _.IN1
+Reset_Load_Clear => _.IN1
+Run => Run_h.IN1
+HEX0[0] <= HexDriver:HexBL.Out0
+HEX0[1] <= HexDriver:HexBL.Out0
+HEX0[2] <= HexDriver:HexBL.Out0
+HEX0[3] <= HexDriver:HexBL.Out0
+HEX0[4] <= HexDriver:HexBL.Out0
+HEX0[5] <= HexDriver:HexBL.Out0
+HEX0[6] <= HexDriver:HexBL.Out0
+HEX1[0] <= HexDriver:HexBU.Out0
+HEX1[1] <= HexDriver:HexBU.Out0
+HEX1[2] <= HexDriver:HexBU.Out0
+HEX1[3] <= HexDriver:HexBU.Out0
+HEX1[4] <= HexDriver:HexBU.Out0
+HEX1[5] <= HexDriver:HexBU.Out0
+HEX1[6] <= HexDriver:HexBU.Out0
+HEX2[0] <= HexDriver:HexAL.Out0
+HEX2[1] <= HexDriver:HexAL.Out0
+HEX2[2] <= HexDriver:HexAL.Out0
+HEX2[3] <= HexDriver:HexAL.Out0
+HEX2[4] <= HexDriver:HexAL.Out0
+HEX2[5] <= HexDriver:HexAL.Out0
+HEX2[6] <= HexDriver:HexAL.Out0
+HEX3[0] <= HexDriver:HexAU.Out0
+HEX3[1] <= HexDriver:HexAU.Out0
+HEX3[2] <= HexDriver:HexAU.Out0
+HEX3[3] <= HexDriver:HexAU.Out0
+HEX3[4] <= HexDriver:HexAU.Out0
+HEX3[5] <= HexDriver:HexAU.Out0
+HEX3[6] <= HexDriver:HexAU.Out0
+Aval[0] <= Aval[0].DB_MAX_OUTPUT_PORT_TYPE
+Aval[1] <= Aval[1].DB_MAX_OUTPUT_PORT_TYPE
+Aval[2] <= Aval[2].DB_MAX_OUTPUT_PORT_TYPE
+Aval[3] <= Aval[3].DB_MAX_OUTPUT_PORT_TYPE
+Aval[4] <= Aval[4].DB_MAX_OUTPUT_PORT_TYPE
+Aval[5] <= Aval[5].DB_MAX_OUTPUT_PORT_TYPE
+Aval[6] <= Aval[6].DB_MAX_OUTPUT_PORT_TYPE
+Aval[7] <= Aval[7].DB_MAX_OUTPUT_PORT_TYPE
+Bval[0] <= reg_8:B_reg.Data_Out
+Bval[1] <= reg_8:B_reg.Data_Out
+Bval[2] <= reg_8:B_reg.Data_Out
+Bval[3] <= reg_8:B_reg.Data_Out
+Bval[4] <= reg_8:B_reg.Data_Out
+Bval[5] <= reg_8:B_reg.Data_Out
+Bval[6] <= reg_8:B_reg.Data_Out
+Bval[7] <= reg_8:B_reg.Data_Out
+LED[0] <= <GND>
+LED[1] <= <GND>
+LED[2] <= <GND>
+LED[3] <= <GND>
+LED[4] <= <GND>
+LED[5] <= <GND>
+LED[6] <= <GND>
+LED[7] <= <GND>
+Xval <= reg_1:X.Data_Out
+
+
+|multiply|reg_8:A_reg
+Clk => Data_Out[0]~reg0.CLK
+Clk => Data_Out[1]~reg0.CLK
+Clk => Data_Out[2]~reg0.CLK
+Clk => Data_Out[3]~reg0.CLK
+Clk => Data_Out[4]~reg0.CLK
+Clk => Data_Out[5]~reg0.CLK
+Clk => Data_Out[6]~reg0.CLK
+Clk => Data_Out[7]~reg0.CLK
+Reset => Data_Next[7].OUTPUTSELECT
+Reset => Data_Next[6].OUTPUTSELECT
+Reset => Data_Next[5].OUTPUTSELECT
+Reset => Data_Next[4].OUTPUTSELECT
+Reset => Data_Next[3].OUTPUTSELECT
+Reset => Data_Next[2].OUTPUTSELECT
+Reset => Data_Next[1].OUTPUTSELECT
+Reset => Data_Next[0].OUTPUTSELECT
+Shift_In => Data_Next.DATAB
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+D[0] => Data_Next.DATAB
+D[1] => Data_Next.DATAB
+D[2] => Data_Next.DATAB
+D[3] => Data_Next.DATAB
+D[4] => Data_Next.DATAB
+D[5] => Data_Next.DATAB
+D[6] => Data_Next.DATAB
+D[7] => Data_Next.DATAB
+Shift_Out <= Data_Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[0] <= Data_Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[1] <= Data_Out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[2] <= Data_Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[3] <= Data_Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[4] <= Data_Out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[5] <= Data_Out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[6] <= Data_Out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[7] <= Data_Out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|reg_8:B_reg
+Clk => Data_Out[0]~reg0.CLK
+Clk => Data_Out[1]~reg0.CLK
+Clk => Data_Out[2]~reg0.CLK
+Clk => Data_Out[3]~reg0.CLK
+Clk => Data_Out[4]~reg0.CLK
+Clk => Data_Out[5]~reg0.CLK
+Clk => Data_Out[6]~reg0.CLK
+Clk => Data_Out[7]~reg0.CLK
+Reset => Data_Next[7].OUTPUTSELECT
+Reset => Data_Next[6].OUTPUTSELECT
+Reset => Data_Next[5].OUTPUTSELECT
+Reset => Data_Next[4].OUTPUTSELECT
+Reset => Data_Next[3].OUTPUTSELECT
+Reset => Data_Next[2].OUTPUTSELECT
+Reset => Data_Next[1].OUTPUTSELECT
+Reset => Data_Next[0].OUTPUTSELECT
+Shift_In => Data_Next.DATAB
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Load => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+D[0] => Data_Next.DATAB
+D[1] => Data_Next.DATAB
+D[2] => Data_Next.DATAB
+D[3] => Data_Next.DATAB
+D[4] => Data_Next.DATAB
+D[5] => Data_Next.DATAB
+D[6] => Data_Next.DATAB
+D[7] => Data_Next.DATAB
+Shift_Out <= Data_Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[0] <= Data_Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[1] <= Data_Out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[2] <= Data_Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[3] <= Data_Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[4] <= Data_Out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[5] <= Data_Out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[6] <= Data_Out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out[7] <= Data_Out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|reg_1:X
+Clk => Data_Out~reg0.CLK
+Reset => Data_Next.OUTPUTSELECT
+Shift_In => Data_Next.DATAB
+Load => Data_Next.OUTPUTSELECT
+Shift_En => Data_Next.OUTPUTSELECT
+D => Data_Next.DATAB
+Shift_Out <= Data_Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_Out <= Data_Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|add_sub:adder
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => invert.DATAA
+B[0] => invert.DATAB
+B[1] => invert.DATAA
+B[1] => invert.DATAB
+B[2] => invert.DATAA
+B[2] => invert.DATAB
+B[3] => invert.DATAA
+B[3] => invert.DATAB
+B[4] => invert.DATAA
+B[4] => invert.DATAB
+B[5] => invert.DATAA
+B[5] => invert.DATAB
+B[6] => invert.DATAA
+B[6] => invert.DATAB
+B[7] => invert.DATAA
+B[7] => invert.DATAB
+cin => ~NO_FANOUT~
+Sub_En => invert.OUTPUTSELECT
+Sub_En => invert.OUTPUTSELECT
+Sub_En => invert.OUTPUTSELECT
+Sub_En => invert.OUTPUTSELECT
+Sub_En => invert.OUTPUTSELECT
+Sub_En => invert.OUTPUTSELECT
+Sub_En => invert.OUTPUTSELECT
+Sub_En => invert.OUTPUTSELECT
+Sub_En => cin_new.IN1
+Add_En => ~NO_FANOUT~
+S[0] <= addition_unit:sub.S
+S[1] <= addition_unit:sub.S
+S[2] <= addition_unit:sub.S
+S[3] <= addition_unit:sub.S
+S[4] <= addition_unit:sub.S
+S[5] <= addition_unit:sub.S
+S[6] <= addition_unit:sub.S
+S[7] <= addition_unit:sub.S
+S[8] <= addition_unit:sub.S
+cout <= addition_unit:sub.cout
+
+
+|multiply|add_sub:adder|addition_unit:sub
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN2
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN2
+cin => cin.IN1
+S[0] <= full_adder:FA0.s
+S[1] <= full_adder:FA1.s
+S[2] <= full_adder:FA2.s
+S[3] <= full_adder:FA3.s
+S[4] <= full_adder:FA4.s
+S[5] <= full_adder:FA5.s
+S[6] <= full_adder:FA6.s
+S[7] <= full_adder:FA7.s
+S[8] <= full_adder:FA8.s
+cout <= full_adder:FA8.c
+
+
+|multiply|add_sub:adder|addition_unit:sub|full_adder:FA0
+x => s.IN0
+x => c.IN0
+x => c.IN0
+y => s.IN1
+y => c.IN1
+y => c.IN0
+z => s.IN1
+z => c.IN1
+z => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|add_sub:adder|addition_unit:sub|full_adder:FA1
+x => s.IN0
+x => c.IN0
+x => c.IN0
+y => s.IN1
+y => c.IN1
+y => c.IN0
+z => s.IN1
+z => c.IN1
+z => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|add_sub:adder|addition_unit:sub|full_adder:FA2
+x => s.IN0
+x => c.IN0
+x => c.IN0
+y => s.IN1
+y => c.IN1
+y => c.IN0
+z => s.IN1
+z => c.IN1
+z => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|add_sub:adder|addition_unit:sub|full_adder:FA3
+x => s.IN0
+x => c.IN0
+x => c.IN0
+y => s.IN1
+y => c.IN1
+y => c.IN0
+z => s.IN1
+z => c.IN1
+z => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|add_sub:adder|addition_unit:sub|full_adder:FA4
+x => s.IN0
+x => c.IN0
+x => c.IN0
+y => s.IN1
+y => c.IN1
+y => c.IN0
+z => s.IN1
+z => c.IN1
+z => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|add_sub:adder|addition_unit:sub|full_adder:FA5
+x => s.IN0
+x => c.IN0
+x => c.IN0
+y => s.IN1
+y => c.IN1
+y => c.IN0
+z => s.IN1
+z => c.IN1
+z => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|add_sub:adder|addition_unit:sub|full_adder:FA6
+x => s.IN0
+x => c.IN0
+x => c.IN0
+y => s.IN1
+y => c.IN1
+y => c.IN0
+z => s.IN1
+z => c.IN1
+z => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|add_sub:adder|addition_unit:sub|full_adder:FA7
+x => s.IN0
+x => c.IN0
+x => c.IN0
+y => s.IN1
+y => c.IN1
+y => c.IN0
+z => s.IN1
+z => c.IN1
+z => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|add_sub:adder|addition_unit:sub|full_adder:FA8
+x => s.IN0
+x => c.IN0
+x => c.IN0
+y => s.IN1
+y => c.IN1
+y => c.IN0
+z => s.IN1
+z => c.IN1
+z => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|control:control_unit
+Clk => curr_state~1.DATAIN
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Reset => curr_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => next_state.OUTPUTSELECT
+Execute => Selector17.IN11
+Execute => Selector0.IN9
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+M => next_state.OUTPUTSELECT
+Shift_En <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+Add_En <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+Sub_En <= Sub_En.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|HexDriver:HexAL
+In0[0] => Decoder0.IN3
+In0[1] => Decoder0.IN2
+In0[2] => Decoder0.IN1
+In0[3] => Decoder0.IN0
+Out0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|HexDriver:HexAU
+In0[0] => Decoder0.IN3
+In0[1] => Decoder0.IN2
+In0[2] => Decoder0.IN1
+In0[3] => Decoder0.IN0
+Out0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|HexDriver:HexBL
+In0[0] => Decoder0.IN3
+In0[1] => Decoder0.IN2
+In0[2] => Decoder0.IN1
+In0[3] => Decoder0.IN0
+Out0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiply|HexDriver:HexBU
+In0[0] => Decoder0.IN3
+In0[1] => Decoder0.IN2
+In0[2] => Decoder0.IN1
+In0[3] => Decoder0.IN0
+Out0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

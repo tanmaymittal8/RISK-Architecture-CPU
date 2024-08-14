@@ -1,0 +1,123 @@
+module testbench();
+
+timeunit 10ns;
+timeprecision 1ns;
+
+
+logic Clk;
+logic Reset, LoadA, LoadB, Execute;
+
+logic [6:0] AhexL, AhexU, BhexL, BhexU;
+logic [15:0] S;
+//must set the inputs manually
+multiply mult0(.SW(SW),.Clk(Clk), .Reset_Load_Clear(Reset), .Run(Execute), .HEX0(AhexL), .HEX1(AhexU), .HEX2(BhexL), .HEX3(BhexU));
+
+
+
+// Toggle the clock
+// #1 means wait for a delay of 1 timeunit
+always begin : CLOCK_GENERATION
+#1 Clk = ~Clk;
+end
+
+initial begin: CLOCK_INITIALIZATION
+    Clk = 0;
+end 
+
+
+initial begin: TEST_VECTORS
+//reset run start low
+Reset = 1'b0;
+Execute = 1'b1;
+
+#2
+
+Reset= 1'b1;
+SW = 8'b11111111;
+Execute = 1'b0;
+
+#2
+
+Execute = 1'b1;
+
+#2
+
+Execute = 1'b0;
+
+#2
+
+Execute = 1'b1;
+
+
+//next case
+Reset = 1'b0;
+Execute = 1'b1;
+
+#2
+
+Execute = 1'b1;
+SW = 8'b10011000;
+Reset = 1'b0;
+
+#2
+
+Execute = 1'b1;
+
+#2
+
+Execute = 1'b0;
+
+#2
+
+Execute = 1'b1;
+
+
+//next case
+Reset = 1'b0;
+Execute = 1'b1;
+
+#2
+
+Reset = 1'b1;
+SW = 8'b11111000;
+Execute = 1'b0;
+
+#2
+
+Execute = 1'b1;
+
+#2
+
+Execute = 1'b0;
+
+#2
+
+Execute = 1'b1;
+
+//next case
+Reset = 1'b0;
+Execute= 1'b1;
+
+#2
+
+Reset = 1'b1;
+SW = 8'b10111001;
+Execute = 1'b0;
+
+#2
+
+Execute = 1'b1;
+
+#2
+
+Execute = 1'b0;
+
+#2
+
+Execute = 1'b1;
+
+
+
+end
+
+endmodule

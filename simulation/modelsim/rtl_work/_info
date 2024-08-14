@@ -1,0 +1,236 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Mechi/Desktop/ece 385 uiuc/lab4/simulation/modelsim
+vadd_sub
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1676528310
+!i10b 1
+!s100 d`mJ5U0NoJb>?i;82kz<22
+IgziYIP=f^cjMm^fAcdHbQ2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 addition_unit_sv_unit
+S1
+R0
+Z5 w1676513785
+Z6 8C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/addition_unit.sv
+Z7 FC:/Users/Mechi/Desktop/ece 385 uiuc/lab4/addition_unit.sv
+L0 22
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1676528310.000000
+Z10 !s107 C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/addition_unit.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Mechi/Desktop/ece 385 uiuc/lab4|C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/addition_unit.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/Mechi/Desktop/ece 385 uiuc/lab4}
+Z14 tCvgOpt 0
+vaddition_unit
+R1
+R2
+!i10b 1
+!s100 k`A7TeOJf:X8b>6aU>k412
+I76FmRz0j8mUYg>]`eU=6<1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vcontrol
+R1
+R2
+!i10b 1
+!s100 2^Mh[0ePJMV`e7FT=JcC`0
+IlY?WbTKeKb]_e:d4Nh;:l3
+R3
+!s105 control_sv_unit
+S1
+R0
+w1676523323
+8C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/control.sv
+FC:/Users/Mechi/Desktop/ece 385 uiuc/lab4/control.sv
+L0 7
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Mechi/Desktop/ece 385 uiuc/lab4|C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/control.sv|
+!i113 1
+R12
+R13
+R14
+vfull_adder
+R1
+R2
+!i10b 1
+!s100 fjmnWBcOZnFV4EoXG1HQ70
+IPESCzh4[cFS^7eo>HYT?g3
+R3
+!s105 full_adder_sv_unit
+S1
+R0
+w1676251082
+8C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/full_adder.sv
+FC:/Users/Mechi/Desktop/ece 385 uiuc/lab4/full_adder.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/full_adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Mechi/Desktop/ece 385 uiuc/lab4|C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/full_adder.sv|
+!i113 1
+R12
+R13
+R14
+vHexDriver
+R1
+R2
+!i10b 1
+!s100 ^DddjRd7Wla]U<SlP;mT@0
+IZTD6BM9zVfJelzg5XI9_b3
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1675808482
+8C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/HexDriver.sv
+FC:/Users/Mechi/Desktop/ece 385 uiuc/lab4/HexDriver.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Mechi/Desktop/ece 385 uiuc/lab4|C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/HexDriver.sv|
+!i113 1
+R12
+R13
+R14
+n@hex@driver
+vmultiply
+R1
+R2
+!i10b 1
+!s100 mZDKTLDecPg<h;Vn:Ddj10
+IO]GE5Hg7:F=Y<5aT;7<3]0
+R3
+!s105 multiply_sv_unit
+S1
+R0
+w1676528275
+8C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/multiply.sv
+FC:/Users/Mechi/Desktop/ece 385 uiuc/lab4/multiply.sv
+L0 13
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/multiply.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Mechi/Desktop/ece 385 uiuc/lab4|C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/multiply.sv|
+!i113 1
+R12
+R13
+R14
+vreg_1
+R1
+R2
+!i10b 1
+!s100 hC?k=D[cQb]J32EBEZLoA0
+IJAncE2fMkD1bMC1]Ff7AH3
+R3
+Z15 !s105 reg_8_sv_unit
+S1
+R0
+Z16 w1676497514
+Z17 8C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/reg_8.sv
+Z18 FC:/Users/Mechi/Desktop/ece 385 uiuc/lab4/reg_8.sv
+L0 29
+R8
+r1
+!s85 0
+31
+R9
+Z19 !s107 C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/reg_8.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Mechi/Desktop/ece 385 uiuc/lab4|C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/reg_8.sv|
+!i113 1
+R12
+R13
+R14
+vreg_8
+R1
+R2
+!i10b 1
+!s100 bn:L:Nf[TkLQ][5AV01hh1
+IRKl9jimbh?JmA5CYWS]aL1
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+vtestbench
+R1
+!s110 1676528311
+!i10b 1
+!s100 ob=kfGcM3IzbBP=OL49M31
+IGiL]3d?3e9a2jD1=K?[gD2
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1676528302
+8C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/testbench.sv
+FC:/Users/Mechi/Desktop/ece 385 uiuc/lab4/testbench.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Mechi/Desktop/ece 385 uiuc/lab4|C:/Users/Mechi/Desktop/ece 385 uiuc/lab4/testbench.sv|
+!i113 1
+R12
+R13
+R14

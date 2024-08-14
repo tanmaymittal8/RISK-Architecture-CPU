@@ -1,0 +1,8 @@
+module addition_unit(input X,
+							input[7:0] S,B
+							output[15:0] AB);
+//implement 9-bit adder that will add to A
+logic[7:0]=A;
+assign A=8'b0;
+
+endmodule

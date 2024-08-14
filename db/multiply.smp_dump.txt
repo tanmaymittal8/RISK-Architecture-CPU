@@ -1,0 +1,21 @@
+
+State Machine - |multiply|control:control_unit|curr_state
+Name curr_state.Halt curr_state.Last_Shift curr_state.Shift7 curr_state.Shift6 curr_state.Shift5 curr_state.Shift4 curr_state.Shift3 curr_state.Shift2 curr_state.Shift1 curr_state.Sub curr_state.Add7 curr_state.Add6 curr_state.Add5 curr_state.Add4 curr_state.Add3 curr_state.Add2 curr_state.Add1 curr_state.Start 
+curr_state.Start 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+curr_state.Add1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+curr_state.Add2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+curr_state.Add3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+curr_state.Add4 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+curr_state.Add5 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+curr_state.Add6 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+curr_state.Add7 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+curr_state.Sub 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+curr_state.Shift1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+curr_state.Shift2 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+curr_state.Shift3 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Shift4 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Shift5 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Shift6 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Shift7 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Last_Shift 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Halt 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
